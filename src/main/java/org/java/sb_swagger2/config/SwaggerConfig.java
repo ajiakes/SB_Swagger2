@@ -46,7 +46,7 @@ public class SwaggerConfig
                 * RequestHandlerSelectors.withMethodAnnotation( ApiOperation.class)  根据方法注解扫描api
                 * RequestHandlerSelectors.withClassAnnotation( RestController.class)  根据类注解扫描api
                 * RequestHandlerSelectors.basePackage("org.java.sb_swagger2.controller")  根据包路径扫描api*/
-                .apis(RequestHandlerSelectors.basePackage("org.java.sb_swagger2.controller"))
+                .apis(RequestHandlerSelectors.basePackage("org.java.sb_swagger2.controller"))//这里建议采用路径这种方式扫描，将该路径替换为你项目中的Controller路径即可
                 /**配置对上方接口扫描到的接口进行过滤，有四种过滤方式如下：
                  * PathSelectors.any() // 任何请求都扫描
                  * PathSelectors.none() // 任何请求都不扫描
